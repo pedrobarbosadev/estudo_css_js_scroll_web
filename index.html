@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+<section>
+        <img src="https://uploaddeimagens.com.br/images/003/177/050/full/bg.jpg?1617225799" id="bg">
+        <img src="https://uploaddeimagens.com.br/images/003/177/053/full/moon.png?1617225891" id="moon">
+        <img src="https://uploaddeimagens.com.br/images/003/177/054/full/mountain.png?1617225953" id="mountain">
+        <img src="https://uploaddeimagens.com.br/images/003/177/055/full/road.png?1617226003" id="road">
+        <h2 id="text">Moon Light</h2>
+</section>
+<script type="text/javascript">
+    let bg = document.getElementById("bg");
+    let moon = document.getElementById("moon");
+    let mountain = document.getElementById("mountain");
+    let road = document.getElementById("road");
+    let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+        
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1.0 + 'px';
+    })
+ </script>
+<main></main>
+<footer>Projeto Portifólio - Pedro R. Barbosa.</footer>
+</body>
+</html>
